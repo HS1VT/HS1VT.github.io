@@ -18,6 +18,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <style>h1 {text-align: center;}
       h2 {text-align: center;}
+        .inp{
+          width: 300px;
       </style>
 </head>
 <body>
@@ -47,6 +49,23 @@
             This page holds all the courses that the department offers. Course contents are updated and maintained periodically.
             Students are advised to keep checking for any important updates.
             <br><br><br>
+          <div class="searchforcourse">
+                <input type="text" class="inp" id="myInput" onkeyup="myFunction()" placeholder="Search for course to visit course website.." title="Type in a name">
+                <ul class="ul" id="myUL">
+                    <li><a href="/Course_Pages/DS100.html">DS 100</a></li>
+                    <li><a href="/Course_Pages/DS200.html">DS 200</a></li>
+                  
+                    <li><a href="/Course_Pages/DS201.html">DS 201</a></li>
+                    <li><a href="/Course_Pages/DS250.html">DS 250</a></li>
+                  
+                    <li><a href="/Course_Pages/DS251.html">DS 251</a></li>
+                    <li><a href="/Course_Pages/DS252.html">DS 252</a></li>
+                    <li><a href="/Course_Pages/DS500.html">DS 500</a></li>
+                    <li><a href="/Course_Pages/DS501.html">DS 501</a></li>
+                    <li><a href="/Course_Pages/DS503.html">DS 503</a></li>
+                    <li><a href="/Course_Pages/DS601.html">DS 601</a></li>
+                  </ul>
+            </div>
             The following are the list of courses:
             <br><br><br>
             <li><a target="_blank" rel="noopener" href="/Course_Pages/DS100.html">DS 100: Mathematical Foundations of Data Science (4 Credits)</a>
@@ -194,6 +213,23 @@
   } else {
     document.addEventListener('DOMContentLoaded', uni);
   }
+  function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+  
 </script>
 <script type="text/javascript" src="/scripts/darkMode.js"></script>
 <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
