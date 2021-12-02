@@ -176,7 +176,9 @@ header {
     color: #202124;
     text-decoration-color: #202124;
 }
-
+a:link{
+    color: #202124;
+}
 a:visited {
     color: #202124;
     text-decoration-color: #202124;
