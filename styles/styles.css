@@ -94,7 +94,7 @@ header {
     /*background-color: var(--main-bg-dark);*/
     backdrop-filter: blur(3px);
     font-family: Consolas, cnsls, monospace;
-    color: whitesmoke;
+    color: #202124;
     vertical-align: center;
     line-height: 12vh;
     font-size: 1rem;
@@ -173,10 +173,14 @@ header {
 }
 
 .uname, #spn a:link, #spn a:visited {
-    color: var(--accent-green);
-    text-decoration-color: var(--accent-green);
+    color: #202124;
+    text-decoration-color: #202124;
 }
 
+a:visited {
+    color: #202124;
+    text-decoration-color: #202124;
+}
 #darkthemecurtain {
     position: absolute;
     display: none;
