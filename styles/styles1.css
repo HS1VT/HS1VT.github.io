@@ -46,6 +46,10 @@ body {
     background-color: var(--main-bg-dark);
 }
 
+.boxed {
+    border: 1px #1DE9B6 ;
+  }
+  
 #pic{
     padding-top: 21vh;
     padding-left: 4vw;
