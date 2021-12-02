@@ -1,4 +1,5 @@
 let systemThemeToggle = false;
+
 function toggle() {
   // Initialising the toggle animation
   const themeButton = document.querySelector("#unchecked");
