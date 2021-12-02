@@ -1,6 +1,6 @@
 :root {
-    --main-bg-dark: #202124;
-    --main-bg-light: #F5F5F5;
+    --main-bg-light: #202124;
+    --main-bg-dark: #F5F5F5;
     --accent-green: #1DE9B6;
 }
 img {border-radius: 50%;}
@@ -47,6 +47,12 @@ body {
     background-color: var(--main-bg-dark);
 }
 
+#colorstrip{
+    width: 100%; height: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
 #pic{
     padding-top: 21vh;
     padding-left: 4vw;
@@ -63,6 +69,17 @@ body {
     background-color: #000000;
     z-index: -1;
 } */
+
+.boxed {
+    border: 1px #1DE9B6 ;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 
 header {
     position: fixed;

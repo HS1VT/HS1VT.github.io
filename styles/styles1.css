@@ -46,6 +46,16 @@ body {
     background-color: var(--main-bg-dark);
 }
 
+.boxed {
+    border: 1px #1DE9B6 ;
+  }
+
+#colorstrip{
+    width: 100%; height: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
 #pic{
     padding-top: 21vh;
     padding-left: 4vw;
