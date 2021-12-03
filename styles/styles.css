@@ -176,6 +176,10 @@ header {
     color: #202124;
     text-decoration-color: #202124;
 }
+.centertable {
+    margin-left: auto;
+    margin-right: auto;
+}
 a:link{
     color: #202124;
 }

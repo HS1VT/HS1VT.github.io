@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png"  href="/assets/favicon.ico">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Courses"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/assets/logotype_me.png"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <style>h1 {text-align: center;}
+      h2 {text-align: center;}
+      .inp{
+          width: 300px;
+      }
+      
+    </style>
+</head>
+<body>
+<!--<span id = "spn">Dark Mode</span>-->
+<header id="header">
+    <a href="/index.html"><img src="/assets/iit.png" width="65" height="65" style="float: left;"></a>
+    <div style="float: right; margin-right: 5%;"><a href="/course.html"> Curriculum</a> &nbsp; / &nbsp;<a href="/research_areas.html">Research Areas</a> &nbsp; / &nbsp;<a href="/projects.html">Projects</a> &nbsp;/&nbsp; <a href="/about.html">About</a></div>
+ </header>
+<br>
+<br>
+<br>
+<div>
+     
+  </div>
+<div id="spn">
+      <h1>Courses - M.Tech </h1>
+      <h2>Data Science & Artificial Intelligence</h2>
+      <hr>
+      <br><br><br>
+      <style>
+          
+      </style>
+      <p >
+            <br>
+            <h2>Semester 1</h2><br>
+            <table border="1" class="centertable">
+              <tr>
+                <th>Course Name</th>
+                <th>Course Code</th>
+                <th>Credits</th>
+              </tr>
+              <tr>
+                <td>Research Methodology </td>
+                <td>IC601</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Departmental Electives</td>
+                <td>-</td>
+                <td>18</td>
+              </tr>
+            </table>
+            <br><hr><br>
+            <h2>Semester 2 onwards</h2><br>
+            <table border="1" class="centertable">
+              <tr>
+                <th>Course Name</th>
+                <th>Course Code</th>
+                <th>Credits</th>
+              </tr>
+              <tr>
+                <td>Departmental Electives/Thesis </td>
+                <td>-</td>
+                <td>24</td>
+              </tr>
+            </table>
+            <br><hr><br>
+            <h2>Summer Semester</h2><br>
+            <table border="1" class="centertable">
+              <tr>
+                <th>Course Name</th>
+                <th>Course Code</th>
+                <th>Credits</th>
+              </tr>
+              <tr>
+                <td>Departmental Electives/Thesis </td>
+                <td>-</td>
+                <td>12</td>
+              </tr>
+            </table>
+            <br><hr><br>
+
+            <br><br><br>
+           
+   <br>
+    <!--Also, if that thing in the URL is annoying, just click on it to pause it.-->
+    
+        <br>
+        <br>
+        <p style="text-align: center;"><a href="/course.html"> Curriculum</a> &nbsp; / &nbsp;<a href="/research_areas.html">Research Areas</a> &nbsp; / &nbsp;<a href="/projects.html">Projects</a> &nbsp;/&nbsp; <a href="/about.html">About</a></p>
+        <br>
+        <p style="text-align:center;"><a href="https://github.com/HS1VT"><img src="/assets/git.png" height="50" width = "50"></a>
+            <br> Copyright © Vishesh Thakur
+      </p>
+        
+    </div>
+</div>
+<script type="text/javascript" src="/scripts/uni.js"></script>
+<script>
+    myFunction()
+  if (document.readyState !== 'loading'){
+    uni();
+  } else {
+    document.addEventListener('DOMContentLoaded', uni);
+  }
+  document.getElementById("myUL").display="block";
+
+
+    
+  function myFunction() {
+      if (!document.getElementById("myInput").value){
+          document.getElementById("myUL").style.display="none";
+      }
+      else{
+          document.getElementById("myUL").style.display="block";
+      }
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+    
+</script>
+<script type="text/javascript" src="/scripts/darkMode.js"></script>
+<script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
+
+</body>
+</html>
+
+
+
+
