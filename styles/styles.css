@@ -101,7 +101,7 @@ nav ul li{
 nav a{
     display: block;
     padding: 0 10px;
-    color: #fff;
+    color: white;
     line-height: 60px;
     font-size: 20px;
     text-decoration: none;
@@ -114,7 +114,8 @@ nav ul ul {
 }
 /* hover */
 nav a:hover{
-    background-color: #000000;
+    color:black;
+    background-color: white;
 }
 /* Display Dropdown on Hover */
 nav ul li:hover > ul {
