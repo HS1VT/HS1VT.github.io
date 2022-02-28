@@ -1,6 +1,6 @@
 :root {
     --main-bg-light: #202124;
-    --main-bg-dark: #F5F5F5;
+    --main-bg-dark: #ffffff;
     --accent-green: #1DE9B6;
 }
 body{
@@ -85,9 +85,15 @@ body {
     margin-right: auto;
     
   }
-  nav{
+nav{
+      position: fixed;
+      text-align: center;
+      width:100%;
+      color: white;
+      display: block;
     background-color: purple;
-}
+    background: purple;
+    }
 nav ul {
     padding: 0;
     margin: 0;
@@ -97,6 +103,7 @@ nav ul {
 nav ul li{
     display: inline-block;
     background-color: purple;
+    padding-left: 20px;
 }
 nav a{
     display: block;
@@ -130,6 +137,28 @@ nav ul ul li{
 
 }
 
+.banner{
+    display: flex;
+}
+.banner.content{
+    display: block;
+font-size: 1.5em;
+
+}
+.banner.head{
+    display: block;
+    font-size: 2.5em;
+    color: purple;
+    }
+
+.image {
+    height: 40em;
+    width: 40em;
+    border-radius: 0%;
+    display: flex;
+    z-index: -1;
+}
+
 /* ============ Second, Third and More Tiers ===========*/
 nav ul ul ul li {
     position: relative;
@@ -143,17 +172,15 @@ li > a:only-child::after {
     content: '';
 }
 
-header {
+#header {
     position: fixed;
-    width: 100vw;
-    height: 12vh;
-    box-shadow: 0 2px 4px rgba(0,0,0,.5);
-    /*background-color: var(--main-bg-dark);*/
+    width: 100%;
+    height: 150px;
     backdrop-filter: blur(3px);
     font-family: Consolas, cnsls, monospace;
+    background-color: #1DE9B6;
     color: #202124;
     vertical-align: center;
-    line-height: 12vh;
     font-size: 1rem;
     z-index: 1;
 }
